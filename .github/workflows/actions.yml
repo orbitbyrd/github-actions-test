@@ -12,4 +12,4 @@ jobs:
         with: 
           who-to-greet: Green Grass
       - name: Log Greeting Time
-        run: echo "{{ steps.simple-js-action.outputs.time }}"
+        run: echo "Greeting time is ${{ steps.simple-js-action.outputs.time }}"
