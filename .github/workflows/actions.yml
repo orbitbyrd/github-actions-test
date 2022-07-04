@@ -12,6 +12,9 @@ jobs:
         run: |
           pwd
           ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
       - name: Simple JS Action
         id: simple-js-action
         uses: actions/hello-world-javascript-action@v1.1
